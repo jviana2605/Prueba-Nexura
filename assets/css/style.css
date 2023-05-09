@@ -1,0 +1,151 @@
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+   /*  --main-color: #000; */
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior:smooth;
+}
+h1{
+    font-size: var(--header1);
+    font-weight: 200;
+    color: var(--special-color);
+}
+h2{
+    font-size: var(--header3);
+    padding: 4rem;
+    font-weight: 100;
+}
+h4{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.container{
+    padding: 5rem;
+}
+.alerta{
+    padding: 3rem;
+    background: aliceblue;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.col-md-7{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+.col-md-7 label{
+    font-size: 2rem;
+    padding: 1rem;
+    min-width: 15%;
+    text-align: end;
+}
+.col-md-7 input[type="text"],
+.col-md-7 input[type="email"]{
+    min-width: 70%;
+    padding: 1rem;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="radio"] {
+  width: 50px !important;
+}
+.general-radios{
+    min-width: 70%;
+}
+.radios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-radios{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem;
+    font-size: 2rem;
+}
+select{
+    min-width: 71%;
+}
+textarea{
+    min-width: 71%;
+    min-height: 10vh; 
+}
+.container-checks{
+    min-width: 70%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.item-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="submit"]{
+    padding: 1rem 2rem;
+    background: #05a5d3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+input[type="submit"]:hover{
+    color: #05a5d3;
+    background: #fff;
+    border: 1px solid #05a5d3;
+}
+
+/*Inicio lista*/
+.lista{
+    min-width: 100%;
+}
+table{
+    min-width: 100%;
+}
+.titles-table{
+    padding: 2rem;
+}
+.titles-table th{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+.list-table{
+    padding: 1rem;
+}
+.list-table th{
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
